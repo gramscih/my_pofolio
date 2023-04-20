@@ -8,6 +8,6 @@ WORKDIR /home/my_porfolio
 
 RUN npm install
 
-EXPOSE 3000 3306
+EXPOSE 3000 3306 80
 
 CMD ["npm", "start"]
