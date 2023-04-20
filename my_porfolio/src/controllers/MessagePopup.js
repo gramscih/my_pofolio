@@ -41,7 +41,6 @@ const MessagePopup = (props) => {
             placeholder="Name"
             required
           />
-          <span className="error-message">Enter valid value.</span>
           <input
             className="txt-input"
             type="email"
@@ -49,7 +48,6 @@ const MessagePopup = (props) => {
             placeholder="Email"
             required
           />
-          <span className="error-message">Enter valid value.</span>
           <input
             className="txt-input"
             type="text"
