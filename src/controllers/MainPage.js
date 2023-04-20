@@ -37,13 +37,21 @@ const MainPage = () => {
         <div className="main-summary">
           <div className="main-press">
             <h3 className="sub-title">
-              Hello, <span className="main-green">I'm</span>
+              Hello there, <span className="main-green">I'm</span>
             </h3>
             <h1 className="main-green my-name">Gramsci Hermozo</h1>
-            <h3 className="sub-title">FullStack developer</h3>
-            <p className="summary txt-18">
-              I am developer with experience in different language and workind
-              in different projects as Backend/UI developer.
+            <h3 className="sub-title">Full Stack &#60;&#47;&#62; Developer</h3>
+            <p className="summary txt-20">
+              Innovative task-driven professional with 9+ years of experience in
+              software design and development across diverse industries.
+              Equipped with a record of success in consistently identifying and
+              providing the technological needs of companies through ingenious
+              innovation.
+              <br />
+              Proficient in developing databases, creating user interfaces,
+              backend applications, writing and testing codes, troubleshooting
+              simple/complex issues, and implementing new features based on user
+              feedback.
             </p>
             <button onClick={togglePopup}>Let's Talk</button>
           </div>
