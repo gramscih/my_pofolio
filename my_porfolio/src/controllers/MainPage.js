@@ -19,20 +19,6 @@ const MainPage = () => {
 
   return (
     <div className="main">
-      <header className="main-header">
-        <h2>GHC-Logo</h2>
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#resume">Resume</a>
-          </li>
-        </ul>
-      </header>
       <div className="main-body">
         <div className="main-summary">
           <div className="main-press">
@@ -60,7 +46,7 @@ const MainPage = () => {
           </div>
         </div>
         <div className="main-ref">
-          <span className="txt-18">Check Out My</span>
+          <span className="summary-txt">Check Out My</span>
           <div className="icon-content">
             <FaLinkedinIn
               className="cont-icon"
