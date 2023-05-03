@@ -1,5 +1,4 @@
 import "../styles/mainpage.css";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import me from "../img/me.jpg";
 import MessagePopup from "./MessagePopup";
@@ -10,11 +9,6 @@ const MainPage = () => {
 
   const togglePopup = () => {
     setIsOpen(!isOpen);
-  };
-
-  const openLink = (url) => {
-    console.log(url);
-    window.open(url, "_blank");
   };
 
   return (
@@ -43,25 +37,6 @@ const MainPage = () => {
           </div>
           <div className="main-img">
             <img src={me} width="450" height="600" alt="new" />
-          </div>
-        </div>
-        <div className="main-ref">
-          <span className="summary-txt">Check Out My</span>
-          <div className="icon-content">
-            <FaLinkedinIn
-              className="cont-icon"
-              size={"2em"}
-              onClick={() =>
-                openLink("https://linkedin.com/in/gramsci-hermozo-campero")
-              }
-            />
-          </div>
-          <div className="icon-content">
-            <FaGithub
-              className="cont-icon"
-              size={"2em"}
-              onClick={() => openLink("https://github.com/gramscih")}
-            />
           </div>
         </div>
       </div>

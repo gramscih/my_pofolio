@@ -17,8 +17,8 @@
 }
 
 .main-body {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
   margin: 20px;
 }
 
@@ -53,32 +53,8 @@ img {
   box-shadow: 1px 10px 13px 4px rgba(0, 189, 149, 0.4);
 }
 
-.main-ref {
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
 .txt-20 {
   font-size: 20px;
-}
-
-.icon-content {
-  display: block;
-  background-color: #155750;
-  border-radius: 15px;
-  color: #f9f9f9;
-  margin: 15px;
-  padding: 15px;
-  width: 30px;
-  height: 30px;
-  transform: rotate(45deg);
-  cursor: pointer;
-}
-
-.cont-icon {
-  position: absolute;
-  transform: rotate(-45deg);
 }
 
 button {
@@ -93,7 +69,7 @@ button {
   margin: 50px 50px 0 0;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 768px) {
   /* @media screen and (max-width: 769px) { */
   .main-body {
     padding-left: 0;
@@ -137,5 +113,16 @@ button {
   .cont-icon {
     height: 15px;
     width: 15px;
+  }
+}
+
+/* For Tablets */
+@media screen and (min-width: 820px) and (max-width: 1024px) {
+  /* .main{
+    position: relative;
+  } */
+
+  .main-body{
+    background: red;
   }
 }

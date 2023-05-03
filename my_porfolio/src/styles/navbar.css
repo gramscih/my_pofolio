@@ -3,7 +3,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   background: #21272f;
-  padding: 20px 80px;
+  padding: 30px 60px;
 }
 
 #navbar {
@@ -49,6 +49,17 @@ nav {
 #mobile i {
   color: #f9f9f9;
   align-items: center;
+}
+
+.main-ref {
+  color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 50px; */
+}
+
+.ref-icon{
+  margin: 15px;
 }
 
 @media screen and (max-width: 769px) {
