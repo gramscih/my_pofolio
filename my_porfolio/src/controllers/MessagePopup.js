@@ -32,9 +32,14 @@ const MessagePopup = (props) => {
   };
 
   return (
-    <div className="popup-box" onClick={closePopup}>
+    <div className="popup-box">
       <div className="box">
-        <h1 className="form-title">Get in touch</h1>
+        <div className="popup-header">
+          <h1 className="form-title">Get in touch</h1>
+          <span className="close-btn" onClick={closePopup}>
+            x
+          </span>
+        </div>
         <form ref={form} onSubmit={sendMessage}>
           <input
             className="txt-input"
