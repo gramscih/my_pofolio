@@ -1,4 +1,4 @@
-nav {
+main {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,6 +63,12 @@ nav {
 }
 
 @media screen and (max-width: 769px) {
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+  }
+
   #navbar {
     display: flex;
     flex-direction: column;
@@ -71,7 +77,7 @@ nav {
     position: fixed;
     top: 90px;
     right: -300px;
-    width: 300px;
+    width: 290px;
     height: 100vh;
     background: #21272f;
     padding: 40px 0 0 10px;
@@ -92,5 +98,9 @@ nav {
   #mobile i {
     font-size: 24px;
     cursor: pointer;
+  }
+
+  main > #mobile{
+    order: 4;
   }
 }

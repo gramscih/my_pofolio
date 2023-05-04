@@ -118,11 +118,13 @@ button {
 
 /* For Tablets */
 @media screen and (min-width: 820px) and (max-width: 1024px) {
-  /* .main{
-    position: relative;
-  } */
+  button {
+    font-size: 18px;
+    margin: 15px 0 20px 0;
+  }
 
-  .main-body{
-    background: red;
+  img {
+    height: 380px;
+    width: 280px;
   }
 }

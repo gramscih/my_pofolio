@@ -5,6 +5,7 @@ import "../styles/navbar.css";
 
 const Navbar = (props) => {
   const [state, setState] = useState(false);
+  const [activeIcon, setActiveIcon] = useState("Home");
 
   const openLink = (url) => {
     console.log(url);
@@ -17,25 +18,43 @@ const Navbar = (props) => {
 
   return (
     <>
-      <nav>
+      <main>
         <h2>GHC-Logo</h2>
-        <div>
+        <nav className="nav-elements">
           <ul id="navbar" className={state ? "#navbar active" : "#navbar"}>
             <li>
-              <a href="#home">Home</a>
+              <a
+                className={activeIcon === "Home" ? "active" : ""}
+                href="#home"
+                onClick={() => setActiveIcon("Home")}
+              >
+                Home
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a
+                className={activeIcon === "Projects" ? "active" : ""}
+                href="#projects"
+                onClick={() => setActiveIcon("Projects")}
+              >
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#resume">Resume</a>
+              <a
+                className={activeIcon === "Resume" ? "active" : ""}
+                href="#resume"
+                onClick={() => setActiveIcon("Resume")}
+              >
+                Resume
+              </a>
             </li>
           </ul>
-        </div>
+        </nav>
         <div id="mobile" onClick={handleClick}>
           <i id="bar" className={state ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
-        <div className="main-ref">
+        <aside className="main-ref">
           <FaLinkedinIn
             className="ref-icon"
             size={"1.3em"}
@@ -48,8 +67,8 @@ const Navbar = (props) => {
             size={"1.3em"}
             onClick={() => openLink("https://github.com/gramscih")}
           />
-        </div>
-      </nav>
+        </aside>
+      </main>
     </>
   );
 };

@@ -11,6 +11,14 @@ const MainPage = () => {
     setIsOpen(!isOpen);
   };
 
+  const calculateAge = () => {
+    const anniversary = new Date("4/1/2015");
+    const difference = Date.now() - anniversary.getTime();
+    const age = new Date(difference);
+
+    return Math.abs(age.getUTCFullYear() - 1970);
+  };
+
   return (
     <div className="main">
       <div className="main-body">
@@ -22,11 +30,11 @@ const MainPage = () => {
             <h1 className="main-green my-name">Gramsci Hermozo</h1>
             <h3 className="sub-title">Full Stack &#60;&#47;&#62; Developer</h3>
             <p className="summary txt-20">
-              Innovative task-driven professional with 9+ years of experience in
-              software design and development across diverse industries.
-              Equipped with a record of success in consistently identifying and
-              providing the technological needs of companies through ingenious
-              innovation.
+              Innovative task-driven professional with +{calculateAge()} years
+              of experience in software design and development across diverse
+              industries. Equipped with a record of success in consistently
+              identifying and providing the technological needs of companies
+              through ingenious innovation.
               <br />
               Proficient in developing databases, creating user interfaces,
               backend applications, writing and testing codes, troubleshooting
