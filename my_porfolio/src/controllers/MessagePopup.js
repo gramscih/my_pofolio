@@ -5,10 +5,8 @@ import "../styles/messagePopup.css";
 
 const MessagePopup = (props) => {
   const form = useRef();
-  console.log();
 
   const sendMessage = (e) => {
-    console.log("Is this function triggered...");
     e.preventDefault();
 
     emailjs
@@ -29,8 +27,12 @@ const MessagePopup = (props) => {
     props.handleClose();
   };
 
+  const closePopup = (e) => {
+    props.handleClose();
+  };
+
   return (
-    <div className="popup-box">
+    <div className="popup-box" onClick={closePopup}>
       <div className="box">
         <h1 className="form-title">Get in touch</h1>
         <form ref={form} onSubmit={sendMessage}>
@@ -59,9 +61,12 @@ const MessagePopup = (props) => {
             type="text"
             name="message"
             placeholder="Message"
+            rows="5"
             required
           ></textarea>
-          <button type="submit">Send Email</button>
+          <button className="form-btn" type="submit">
+            Send Email
+          </button>
         </form>
       </div>
     </div>
